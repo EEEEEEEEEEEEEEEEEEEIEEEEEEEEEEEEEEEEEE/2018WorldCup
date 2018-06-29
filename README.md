@@ -21,9 +21,9 @@ page为页数，为数字:
 
 ### 如果没有数据库，没有安装依赖包，请按以下步骤：
 #### 1 安装Chrome浏览器
-#### 2 进入testProject目录
+#### 2 进入项目根目录
 #### 3 pip install -r requirements.txt
 #### 4 进入worldCupSpider目录
 #### 5 python run.py
-#### 6 进入testProject目录
+#### 6 进入项目根目录
 #### 7 python manage.py
