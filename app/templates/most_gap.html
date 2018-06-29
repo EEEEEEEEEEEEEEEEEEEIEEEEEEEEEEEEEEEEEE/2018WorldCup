@@ -1,0 +1,13 @@
+{% extends 'index.html' %}
+
+{% block content %}
+<ul>
+    {% for v in duels %}
+    <li>{{ v.datetime }} --> {{  v.team_er.name }} {{ v.t1_score }} - {{ v.t2_score }} {{ v.team_ed.name }}</li>
+    {% endfor %}
+</ul>
+<script>
+    var n4 = document.getElementById("n4");
+    n4.className = "active";
+</script>
+{% endblock %}

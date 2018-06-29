@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>2018世界杯数据统计 - 首页</title>
+    <style>
+        body {
+            background-color: #ededef;
+        }
+        li {
+            list-style: none;
+        }
+        .inline li {
+            display: inline-block;
+
+        }
+        a {
+            text-decoration: none;
+            color: #000;
+        }
+        li a {
+            display: block;
+            height: 40px;
+            padding: 0 10px;
+            margin: 0 5px;
+            line-height: 40px;
+        }
+        li a:hover {
+            background-color: #000;
+            color: #fff;
+        }
+        nav {
+            background-color: #ccc;
+            text-align: center;
+        }
+        .clearfix::after {
+            display: block;
+            content: '';
+            clear: both;
+            visibility: hidden;
+            width: 0;
+        }
+        .active {
+            background-color: #000;
+            color: #fff!important;
+        }
+        .container {
+            width: 768px;
+            margin: 0 auto;
+
+        }
+    </style>
+</head>
+<body>
+<headers>
+    <nav>
+        <ul class="clearfix inline">
+            <li><a href="{{ url_for('main.index') }}" id="n1">首页</a></li>
+            <li><a href="{{ url_for('main.power_32', page=1) }}" id="n2">32强</a></li>
+            <li><a href="{{ url_for('main.most_gd') }}" id="n3">净胜球最多</a></li>
+            <li><a href="{{ url_for('main.most_gap') }}" id="n4">比分差距最大</a></li>
+            <li><a href="{{ url_for('main.promotion') }}" id="n5">晋级球队</a></li>
+        </ul>
+    </nav>
+</headers>
+<div class="container">
+    {% block content %}{% endblock %}
+</div>
+
+<script>
+    var n1 = document.getElementById("n1");
+    n1.className = "active";
+</script>
+</body>
+</html>

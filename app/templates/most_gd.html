@@ -1,0 +1,48 @@
+{% extends 'index.html' %}
+
+{% block content %}
+<dl>
+    <dt>{{ group_a[0].group.name }}</dt>
+    <dd>{{ group_a[0].name }} {{ group_a[0].gd }}</dd>
+    <dd>{{ group_a[1].name }} {{ group_a[1].gd }}</dd>
+</dl>
+<dl>
+    <dt>{{ group_b[0].group.name }}</dt>
+    <dd>{{ group_b[0].name }} {{ group_b[0].gd }}</dd>
+    <dd>{{ group_b[1].name }} {{ group_b[1].gd }}</dd>
+</dl>
+<dl>
+    <dt>{{ group_c[0].group.name }}</dt>
+    <dd>{{ group_c[0].name }} {{ group_c[0].gd }}</dd>
+    <dd>{{ group_c[1].name }} {{ group_c[1].gd }}</dd>
+</dl>
+<dl>
+    <dt>{{ group_d[0].group.name }}</dt>
+    <dd>{{ group_d[0].name }} {{ group_d[0].gd }}</dd>
+    <dd>{{ group_d[1].name }} {{ group_d[1].gd }}</dd>
+</dl>
+<dl>
+    <dt>{{ group_e[0].group.name }}</dt>
+    <dd>{{ group_e[0].name }} {{ group_e[0].gd }}</dd>
+    <dd>{{ group_e[1].name }} {{ group_e[1].gd }}</dd>
+</dl>
+<dl>
+    <dt>{{ group_f[0].group.name }}</dt>
+    <dd>{{ group_f[0].name }} {{ group_f[0].gd }}</dd>
+    <dd>{{ group_f[1].name }} {{ group_f[1].gd }}</dd>
+</dl>
+<dl>
+    <dt>{{ group_g[0].group.name }}</dt>
+    <dd>{{ group_g[0].name }} {{ group_g[0].gd }}</dd>
+    <dd>{{ group_g[1].name }} {{ group_g[1].gd }}</dd>
+</dl>
+<dl>
+    <dt>{{ group_h[0].group.name }}</dt>
+    <dd>{{ group_h[0].name }} {{ group_h[0].gd }}</dd>
+    <dd>{{ group_h[1].name }} {{ group_h[1].gd }}</dd>
+</dl>
+<script>
+    var n3 = document.getElementById("n3");
+    n3.className = "active";
+</script>
+{% endblock %}
